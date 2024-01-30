@@ -7,23 +7,23 @@ This project includes several submodules, each pointing to a specific implementa
 ## Linked List Implementations
 
 - **Aiken Linked List**: A linked list implementation using the Aiken methodology.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/aiken-linked-list)
+  - [aiken-linked-list](https://github.com/Anastasia-Labs/aiken-linked-list)
 
 - **Plutarch Linked List**: A linked list implementation using the Plutarch.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/plutarch-linked-list)
+  - [plutarch-linked-list](https://github.com/Anastasia-Labs/plutarch-linked-list)
 
 ## Merkle Tree Implementations
 
 - **Plutarch Merkle Tree**: A Merkle tree data structure implemented with Plutarch.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/plutarch-merkle-tree)
+  - [plutarch-merkle-tree](https://github.com/Anastasia-Labs/plutarch-merkle-tree)
 
 - **Aiken Merkle Tree**: A Merkle tree structure designed following the Aiken methodology.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/aiken-merkle-tree)
+  - [aiken-merkle-tree](https://github.com/Anastasia-Labs/aiken-merkle-tree)
 
 ## Trie Implementations
 
 - **Plutarch Trie**: A trie (prefix tree) implementation utilizing Plutarch.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/plutarch-trie)
+  - [plutarch-trie](https://github.com/Anastasia-Labs/plutarch-trie)
 
 - **Aiken Trie**: A trie data structure crafted with the Aiken approach.
-  - [GitHub Repository](https://github.com/Anastasia-Labs/aiken-trie)
+  - [aiken-trie](https://github.com/Anastasia-Labs/aiken-trie)
