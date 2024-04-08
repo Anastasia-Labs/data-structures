@@ -1,0 +1,8 @@
+{
+  "index": "Data structures",
+  "nix_environments": "Nix Environments",
+  "aiken_setup": "Aiken Setup",
+  "merkle_tree": "Merkle Tree",
+  "linked_list": "Linked List",
+  "tries": "Tries"
+}
