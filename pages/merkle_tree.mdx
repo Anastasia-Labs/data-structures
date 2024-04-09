@@ -75,7 +75,7 @@ Before leveraging the Plutarch Merkle Tree library, ensure you're equipped with:
 
 To integrate the Plutarch Merkle Tree library into your project, start by creating a `cabal.project` file, as this file is not automatically generated during the cabal init process. Then, proceed by including the following:
 
-```filename="cabal.project"
+```project filename="cabal.project"
 source-repository-package
   type: git
   location: git://github.com/Anastasia-Labs/plutarch-merkle-tree.git
@@ -83,7 +83,7 @@ source-repository-package
 
 Then in the your `[name of your project].cabal` file include the repository under the build-depends section
 
-```filename="[name of your project].cabal" {3}
+```cabal filename="[name of your project].cabal" {3}
 build-depends:
     base ^>= 4.11.1.0
   , plutarch-merkle-tree
@@ -249,11 +249,144 @@ pmyProof = pdata $ pconstant myProof
 pIsValid = pmember # pdata (pconstant "data1") # pdata (pconstant $ rootHash myMerkleTree) # pmyProof
 ```
 
-### Advanced Functionalities
+## Aiken Merkle Tree implementation
 
-Dive deeper into the Plutarch Merkle Tree library to discover functions for adding leaves, combining hashes, and evaluating tree properties like size and emptiness. These advanced features enable complex data management and verification schemes within your smart contracts.
+### Installation
 
-### Best Practices and Considerations
+To integrate the Aiken Merkle Tree library into your project, start by adding to your aiken project `.toml` file the following:
+
+```toml filename="[name of your project].toml"
+[[dependencies]]
+name = "Anastasia-Labs/aiken-merkle-tree"
+version = "0.0.1"
+source = "github"
+```
+
+### Utilizing Aiken Merkle Trees
+
+This guide walks you through the process of integrating the aiken-merkle-tree library into your smart contracts to leverage Merkle Trees for data integrity and efficient verification. We'll cover the setup and a practical example to demonstrate its application.
+
+#### Step 1: Importing the Library
+
+Start by ensuring the `aiken-merkle-tree` library is included in your project's dependencies. This library provides essential functionalities to construct and interact with Merkle Trees, such as generating proofs and verifying membership.
+
+```rs
+use aiken_merkle_tree/mt::{Proof, Root, from_list, get_proof, is_member, root}
+```
+
+#### Step 2: Defining data structures
+
+```rs
+type MyDatum {
+  merkle_root: Root,
+}
+
+type MyRedeemer {
+  my_proof: Proof<ByteArray>,
+  user_data: ByteArray,
+}
+```
+
+#### Step 3: Implementing the validator function
+
+Create a `spend_validator` function to authenticate transactions. This function will use the `is_member` method from the library to check if the provided user data is part of the Merkle tree, using the Merkle root and a proof.
+
+```rs
+validator {
+  fn spend_validator(datum: MyDatum, redeemer: MyRedeemer, _ctx: ScriptContext) {
+    let MyDatum { merkle_root } = datum
+    let MyRedeemer { my_proof, user_data } = redeemer
+    is_member(merkle_root, user_data, my_proof, identity)
+  }
+}
+```
+
+#### Step 4: Create a test case
+
+To ensure the validator's functionality, construct a test case that creates a Merkle Tree from sample data, generates a proof for a specific data item, and then validates the proof using the `spend_validator` function.
+
+```rs
+test spend_validator_1() {
+  let data = ["dog", "cat", "mouse"]
+  let merkle_tree = from_list(data, identity)
+  let datum = MyDatum { merkle_root: root(merkle_tree) }
+  let proof = get_proof(merkle_tree, "cat", identity).expect("Proof should exist")
+  let redeemer = MyRedeemer { my_proof: proof, user_data: "cat" }
+  let placeholder_utxo = OutputReference { transaction_id: TransactionId(""), output_index: 0 }
+  let context = ScriptContext { purpose: Spend(placeholder_utxo), transaction: transaction.placeholder() }
+  spend_validator(datum, redeemer, context)
+}
+```
+
+#### Complete file overview
+
+```rs filename="sample.ak" showLineNumbers {1,30,40,42}
+use aiken/transaction.{OutputReference, ScriptContext, Spend, TransactionId}
+// /**
+//  * This file contains the implementation of a spend_validator function that validates a spend transaction
+//  * using a Merkle tree. It also includes a test case for the spend_validator function.
+//  */
+
+use aiken_merkle_tree/mt.{Proof, Root, from_list, get_proof, is_member, root}
+
+type MyDatum {
+  merkle_root: Root,
+}
+
+type MyRedeemer {
+  my_proof: Proof<ByteArray>,
+  user_data: ByteArray,
+}
+
+// /**
+//  * The spend_validator function validates a spend transaction by checking if the user data is a member of
+//  * the Merkle tree with the given Merkle root and proof.
+//  *
+//  * @param datum - The MyDatum object containing the Merkle root.
+//  * @param redeemer - The MyRedeemer object containing the proof and user data.
+//  * @param _ctx - The ScriptContext.
+//  */
+validator {
+  fn spend_validator(datum: MyDatum, redeemer: MyRedeemer, _ctx: ScriptContext) {
+    let MyDatum { merkle_root } = datum
+    let MyRedeemer { my_proof, user_data } = redeemer
+    is_member(merkle_root, user_data, my_proof, identity)
+  }
+}
+
+// /**
+//  * Test case for the spend_validator function.
+//  */
+test spend_validator_1() {
+  let data =
+    ["dog", "cat", "mouse"]
+  let merkle_tree = from_list(data, identity)
+  let datum = MyDatum { merkle_root: root(merkle_tree) }
+  expect Some(proof) = get_proof(merkle_tree, "cat", identity)
+  let redeemer = MyRedeemer { my_proof: proof, user_data: "cat" }
+  let placeholder_utxo =
+    OutputReference { transaction_id: TransactionId(""), output_index: 0 }
+  let context =
+    ScriptContext {
+      purpose: Spend(placeholder_utxo),
+      transaction: transaction.placeholder(),
+    }
+  spend_validator(datum, redeemer, context)
+}
+```
+
+<Callout type="warning" emoji="⚠️">
+  Note: To prevent compilation issues, it's crucial to regularly update the
+  Aiken library, including the standard library (stdlib). Ensuring these
+  components are current helps maintain compatibility and smooth functioning of
+  your code.
+</Callout>
+
+## Advanced Functionalities
+
+Dive deeper into the Merkle Tree library to discover functions for adding leaves, combining hashes, and evaluating tree properties like size and emptiness. These advanced features enable complex data management and verification schemes within your smart contracts.
+
+## Best Practices and Considerations
 
 - **Data Pre-Hashing**: Maintain data confidentiality and integrity by pre-hashing data before tree insertion.
 
