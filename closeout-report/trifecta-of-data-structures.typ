@@ -94,15 +94,11 @@
 // #set terms(separator:[: ],hanging-indent: 30mm)
 
 == Challenge KPIs
-We successfully Implemented and documented advanced data structures (Merkle trees, Tries, and Linked Lists) in Aiken and Plutarch, as stated in the #fund-link which leads to;
 \
-\
-+ *Enhanced Scalability of DApps on Cardano:*  Given the inherent constraints of the blockchain, such as the ledger rules and transaction size limitations, the project leveraged the Extended UTXO (EUTXO) model and minting policies to create distributed data structures that can span multiple UTXOs. This approach enabled larger and more complex smart contract applications, thereby significantly enhancing the scalability of DApps on Cardano.
- - *Merkle Trees:*  Merkle trees are valuable in proving the presence of arbitrary data within the tree structure. By carrying only the root hash in the script, an efficient and space-saving proof can be generated, ensuring data integrity and validity. This significantly reduces the amount of data that needs to be stored in each transaction, thereby enabling developers scale their DApps on Cardano.
- - *Linked Lists:* Linked list structures leverage the EUTXO model to enhance scalability and throughput significantly. By linking multiple UTXOs together through a series of minting policies and validators, it can improve the user experience interacting with smart contracts concurrently. This enables larger and more complex smart contract applications, thereby enhancing the scalability of DApps on Cardano.
- - *Tries:* A trie, also known as a prefix tree or digital tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings. With this implementation, developers can leverage the security and efficiency of Tries in their Cardano smart contracts, ensuring data integrity and efficient data verification.
+  + *Enhancing Scalability of Cardano:*  Given the inherent constraints of the blockchain, such as the ledger rules and transaction size limitations, we challenged ourselves to build advanced data structures (Merkle trees, Tries, and Linked Lists). These structures enable larger and more complex smart contract applications, which are significant to enhancing the scalability of DApps on Cardano.
 
-+ *Availability of shared design patterns and practical examples for scaling solutions.:* We recognized the absence of shared design patterns and limited availability of practical examples for scaling solutions in the Cardano community. To address this, we implemented advanced data structures (Merkle trees, Tries, and Linked Lists in Aiken and Plutarch) and provided comprehensive documentation and tutorials, thereby enriching the educational resources available to developers. This not only provides efficient and scalable data structures for Cardano smart contracts but also serves as a valuable resource for developers looking to understand and implement these data structures in their own projects.
+  + *Addressing Insufficient onchain data structures hinders scalability of Cardano:* Recognising the absence of shared design patterns and limited availability of practical examples for scaling solutions in the Cardano community. We implemented advanced data structures (Merkle trees, Tries, and Linked Lists in Aiken and Plutarch) and provided comprehensive, well structured and easy to understand documentation and tutorials, thereby enriching the educational resources available to developers whilst providing efficient and scalable data structures for Cardano smart contracts as well as serving as a valuable resource for developers looking to understand and implement these data structures in their own projects.
+  + *Ensuring Code Quality and Production-Ready Resources:* The project upheld high standards of code quality, adherence to best practices and readiness for production in the implementation of these structures through thorough code reviews and unit tests, to ensure reliability and efficiency for the developer community.
 \
 == Project KPIs
 List of project KPIs and how the project addressed them:
@@ -123,7 +119,7 @@ List of project KPIs and how the project addressed them:
 #v(10mm)
 
 - *Implementation of Advanced Data Structures:* We successfully developed and implemented advanced data structures (Merkle trees, Tries, and Linked Lists) in Aiken and Plutarch. These structures enhance the scalability of DApps on Cardano by allowing for more efficient use of the limited 16kb transaction size and the single UTXO model.
-\
+
 - *Extensive documentation and tutorials:* We are proud to have enriched the Cardano community with educational resources by providing comprehensive documentation and tutorials to help developers understand and utilize these data structures in their projects.
 
 #v(10mm)
@@ -131,9 +127,13 @@ List of project KPIs and how the project addressed them:
 = Key learnings:
 #set text(size: 11pt)  // Reset text size to 11pt
 We grew a lot in experience implementing Merkle Trees, Linked Lists and Tries in Plutarch and Aiken in various ways;
+
 - *Efficient Data Integrity with Merkle Trees:* We gained a deep understanding of constructing and verifying Merkle proofs, which enhanced our ability to implement secure and efficient data validation processes.
+
 - *Flexibility and Efficiency with Linked Lists:*  Leveraging Plutarch's functional programming paradigm and Aiken's robust type system to create Linked Lists that are both efficient and easy to maintain, highlighted the importance of designing for efficient insertion and deletion operations.
+
 - *Managing Mutable Data with Tries:*  learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations.
+
 - *Leveraging Plutarch and Aiken's Strengths:* We got to appreciate Plutarch's composability and functional programming features, which facilitated the construction of intricate data structures. Aiken's expressive syntax and strong typing system contributed to writing clear and maintainable code, ensuring that smart contracts are both robust and efficient.
 // #pagebreak()
 #set text(size: 11pt)  // Reset text size to 11pt
@@ -153,13 +153,11 @@ We grew a lot in experience implementing Merkle Trees, Linked Lists and Tries in
 #set text(size: 11pt)  // Reset text size to 10pt
 \
 We are incredibly proud to add open source libraries to the Cardano communities. Our implementations of advanced data structures in Aiken and Plutarch not only enhance the scalability of DApps on Cardano but also serve as a valuable resource for the developer community. We look forward to seeing how these tools are used and adapted in future Cardano projects.
-#v(10mm)
 
 #v(10mm)
 #set text(size: 16pt)  // Set text size to 16pt
 = Resources 
 #set text(size: 11pt)  // Reset text size to 10pt
-#v(10mm)
 Links to other relevant project sources or documents: 
 #v(5mm)
 
