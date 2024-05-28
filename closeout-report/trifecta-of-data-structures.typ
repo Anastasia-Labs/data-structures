@@ -148,7 +148,7 @@ List of project KPIs and how the project addressed them:
 
 - *Managing mutable data with Tries:*  We learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations.
 
-- *Further experience with Plutarch and Aiken:* We got to appreciate Plutarch's ability to manipulate outcomes at a lower level, enhancing control over data structures and facilitating the construction of intricate data structures as well as Aiken's expressive syntax and strong typing system  which contributed to writing clear and maintainable code.
+- *Further experience with Plutarch and Aiken:* We got to appreciate Plutarch’s ability to provide more efficient and precise control over data structures, facilitating the construction of intricate data structures and optimizing the performance of smart contracts on the Cardano blockchain. as well as Aiken's expressive syntax and strong typing system  which contributed to writing clear and maintainable code.
 
 #v(10mm)
 
