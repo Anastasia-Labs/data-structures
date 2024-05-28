@@ -91,7 +91,7 @@
 #set text(size: 11pt)  // Reset text size to 10pt
 #set page(
    footer: [
-    #set text(fill: gray)
+    #set text(size: 11pt, fill: gray)
     #line(length: 100%, stroke: 0.5pt)
     #v(-3mm)
     #align(center)[ 
@@ -124,10 +124,10 @@
 
 == Challenge KPIs
 \
-  + *Enhancing Scalability of Cardano:*  Given the inherent constraints of the blockchain, such as the ledger rules and transaction size limitations, we challenged ourselves to build advanced data structures (Merkle trees, Tries, and Linked Lists). These structures enable larger and more complex smart contract applications, which are significant to enhancing the scalability of DApps on Cardano.
+  + *Enhancing scalability of Cardano:*  Given the inherent constraints of the blockchain, such as the ledger rules and transaction size limitations, we challenged ourselves to build advanced data structures (Merkle trees, Tries, and Linked Lists). These structures enable larger and more complex smart contract applications, which are significant to enhancing the scalability of DApps on Cardano.
 
-  + *Addressing Insufficient onchain data structures on Cardano:* Recognising the absence of shared design patterns and limited availability of practical examples for scaling solutions in the Cardano community. We implemented advanced data structures (Merkle trees, Tries, and Linked Lists in Aiken and Plutarch) and provided comprehensive, well structured and easy to understand documentation and tutorials, thereby enriching the educational resources available to developers whilst providing efficient and scalable data structures for Cardano smart contracts as well as serving as a valuable resource for developers looking to understand and implement these data structures in their own projects.
-  + *Ensuring Code Quality and Production-Ready Resources:* The project upheld high standards of code quality, adherence to best practices and readiness for production in the implementation of these structures through thorough code reviews and unit tests, to ensure reliability and efficiency for the developer community.
+  + *Addressing insufficient onchain data structures on Cardano:* Recognising the absence of shared design patterns and limited availability of practical examples for scaling solutions in the Cardano community. We implemented advanced data structures (Merkle trees, Tries, and Linked Lists in Aiken and Plutarch) and provided comprehensive, well structured and easy to understand documentation and tutorials, thereby enriching the educational resources available to developers whilst providing efficient and scalable data structures for Cardano smart contracts as well as serving as a valuable resource for developers looking to understand and implement these data structures in their own projects.
+  + *Ensuring code quality and production-ready resources:* The project upheld high standards of code quality, adherence to best practices and readiness for production in the implementation of these structures through thorough code reviews and unit tests, to ensure reliability and efficiency for the developer community.
 \
 == Project KPIs
 List of project KPIs and how the project addressed them:
@@ -139,35 +139,33 @@ List of project KPIs and how the project addressed them:
 
 + *Make the project fully open-source:* All developed code, documentation, tutorials and examples of validator scripts to validate and showcase these library implementations have been made publicly available under an MIT license and can be found in the #git-link.
 
-// + *Community Engagement and Collaboration:* By making the project fully open-source on the #git-link, we as well as the community can easily monitor various metrics on GitHub as indicators of community interest and adoption. We intend to track the number of stars, forks, pull requests and contributions in the repository. Feedbacks, discussions, and questions on the project’s GitHub repository will also be monitored to assess the level of community engagement with the project.
-
 #pagebreak()
 #v(10mm)
 = Key achievements
 #v(10mm)
 
-- *Implementation of Advanced Data Structures:* We successfully developed and implemented advanced data structures (Merkle trees, Tries, and Linked Lists) in Aiken and Plutarch. These structures enhance the scalability of DApps on Cardano by allowing for more efficient use of the limited 16kb transaction size and the single UTXO model.
+- *Implementation of advanced data dtructures:* We successfully developed and implemented advanced data structures (Merkle trees, Tries, and Linked Lists) in Aiken and Plutarch. These structures enhance the scalability of DApps on Cardano by allowing for more efficient use of the limited 16kb transaction size and the single UTXO model.
 
 - *Extensive documentation and tutorials:* We are proud to have enriched the Cardano community with educational resources by providing comprehensive documentation and tutorials to help developers understand and utilize these data structures in their projects.
 
 #v(10mm)
 = Key learnings:
 \
-- *Efficient Data Integrity with Merkle Trees:* We gained a deep understanding of constructing and verifying Merkle proofs, which enhanced our ability to implement secure and efficient data validation processes.
+- *Efficient data integrity with Merkle Trees:* We gained a deep understanding of constructing and verifying Merkle proofs, which enhanced our ability to implement secure and efficient data validation processes.
 
-- *Flexibility and Efficiency with Linked Lists:*  Leveraging Plutarch's functional programming paradigm and Aiken's robust type system to create Linked Lists that are both efficient and easy to maintain, highlighted the importance of designing for efficient insertion and deletion operations.
+- *Flexibility and efficiency with Linked Lists:*  Leveraging Plutarch's functional programming paradigm and Aiken's robust type system to create Linked Lists that are both efficient and easy to maintain, highlighted the importance of designing for efficient insertion and deletion operations.
 
-- *Managing Mutable Data with Tries:*  We learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations.
+- *Managing mutable data with Tries:*  We learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations.
 
-- *Further Experience with Plutarch and Aiken:* We got to appreciate Plutarch's ability to manipulate outcomes at a lower level, enhancing control over data structures and facilitating the construction of intricate data structures as well as Aiken's expressive syntax and strong typing system  which contributed to writing clear and maintainable code.
+- *Further experience with Plutarch and Aiken:* We got to appreciate Plutarch's ability to manipulate outcomes at a lower level, enhancing control over data structures and facilitating the construction of intricate data structures as well as Aiken's expressive syntax and strong typing system  which contributed to writing clear and maintainable code.
 
 #v(10mm)
 
 = Next steps
 \
-*Continuous Improvement:* Based on the feedback and insights from the community, we plan to continue refining and optimizing our implementations of Merkle trees, Tries, and Linked Lists in both Aiken and Plutarch.
+*Continuous improvement:* Based on the feedback and insights from the community, we plan to continue refining and optimizing our implementations of Merkle trees, Tries, and Linked Lists in both Aiken and Plutarch.
 
-*Community Engagement and Collaboration:* We intend to monitor various metrics on GitHub as indicators of community interest and adoption such as tracking the number of stars, forks, pull requests and contributions in the repository. Feedbacks, discussions, and questions on the project’s GitHub repository will also be monitored to assess the level of community engagement with the project.
+*Community engagement and collaboration:* We intend to monitor various metrics on GitHub as indicators of community interest and adoption such as tracking the number of stars, forks, pull requests and contributions in the repository. Feedbacks, discussions, and questions on the project’s GitHub repository will also be monitored to assess the level of community engagement with the project.
 
 #v(10mm)
 = Final thoughts/comments:
