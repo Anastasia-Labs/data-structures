@@ -49,15 +49,6 @@
 // Reset text style to default
 #set text(fill: luma(0%))
 
-
-// / Project: The Trifecta of Data Structures
-// / URL: #fund-link
-// / Number: 1000013 \
-// / Start Date: 2023-10-08 \
-// / End Date: 2024-03-31 \
-
-// #set text(font: "Montserrat", size: 11pt, fill: luma(0%))
-
 // Display project details
 #show link: underline
 #set terms(separator:[: ],hanging-indent: 18mm)
@@ -95,7 +86,7 @@
     #line(length: 100%, stroke: 0.5pt)
     #v(-3mm)
     #align(center)[ 
-      *Anastasia Labs – The Trifecta of Data Structures*
+      *Anastasia Labs – The Trifecta Of Data Structures*
       #v(-3mm)
       Closeout Report
       #v(-3mm)
@@ -135,7 +126,7 @@ List of project KPIs and how the project addressed them:
 \
 + *Provide generic and production-ready implementations:* The team developed robust, optimized, and well-tested implementations of Merkle trees, Tries, and Linked Lists in both Aiken and Plutarch, providing functional and efficient data structures for real-world smart contract applications.
 
-+ *Ensure robustness through rigorous Testing:* The project ensured the reliability of the data structures through comprehensive code review and unit testing, validating their correctness and efficiency.
++ *Ensure robustness through rigorous testing:* The project ensured the reliability of the data structures through comprehensive code review and unit testing, validating their correctness and efficiency.
 
 + *Make the project fully open-source:* All developed code, documentation, tutorials and examples of validator scripts to validate and showcase these library implementations have been made publicly available under an MIT license and can be found in the #git-link.
 
