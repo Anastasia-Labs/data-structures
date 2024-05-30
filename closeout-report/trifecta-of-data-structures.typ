@@ -3,7 +3,9 @@
 #let image-header = image("images/Logo-Anastasia-Labs-V-Color01.png", height: 75%, fit: "contain")
 #let fund-link = link("https://projectcatalyst.io/funds/10/f10-osde-open-source-dev-ecosystem/anastasia-labs-the-trifecta-of-data-structures-merkle-trees-tries-and-linked-lists-for-cutting-edge-contracts")[Catalyst Proposal]
 #let git-link = link("https://github.com/Anastasia-Labs/data-structures")[Main Github Repo]
-
+#let taste-test-link = link("https://sundae.fi/posts/sundaeswap-presents-the-taste-test")[Taste Test]
+#let single-asset-staking-link = link("https://sundae.fi/posts/sundaeswap-presents-the-taste-test")[Single Asset Staking]
+https://github.com/Anastasia-Labs/single-asset-staking
 #set page(
   background: image-background,
   paper :"a4",
@@ -88,11 +90,11 @@
     #align(center)[ 
       *Anastasia Labs – The Trifecta Of Data Structures*
       #v(-3mm)
-      Closeout Report
+      Project Closeout Report
       #v(-3mm)
-      Copyright © 
-      #set text(fill: black)
-      Anastasia Labs
+      // Copyright © 
+      // #set text(fill: black)
+      // Anastasia Labs
     ]
     #v(-6mm)
     #align(right)[
@@ -139,6 +141,11 @@ List of project KPIs and how the project addressed them:
 
 - *Extensive documentation and tutorials:* We are proud to have enriched the Cardano community with educational resources by providing comprehensive documentation and tutorials to help developers understand and utilize these data structures in their projects.
 
+// sunday swap and single asset staking for sundayswap linkedlists and taste test  
+// https://sundae.fi/posts/sundaeswap-presents-the-taste-test
+// https://github.com/Anastasia-Labs/single-asset-staking
+- *Collaboration with Sundayswap:* We worked closely with the SundaeSwap team to integrate our linked list implementation into their #single-asset-staking-link library and the SundaeSwap "#taste-test-link" mechanism. This collaboration helped showcase the practical applications of our data structure work and its benefits for real-world Cardano projects. 
+
 #v(10mm)
 = Key learnings:
 \
@@ -146,9 +153,9 @@ List of project KPIs and how the project addressed them:
 
 - *Flexibility and efficiency with Linked Lists:*  Leveraging Plutarch's functional programming paradigm and Aiken's robust type system to create Linked Lists that are both efficient and easy to maintain, highlighted the importance of designing for efficient insertion and deletion operations.
 
-- *Managing mutable data with Tries:*  We learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations.
+- *Managing mutable data with Tries:*  We learned to optimize storage by sharing common prefixes and implementing fast update and lookup operations. This expertise was further demonstrated through our collaboration with SundaeSwap.
 
-- *Further experience with Plutarch and Aiken:* We got to appreciate Plutarch’s ability to provide more efficient and precise control over data structures, facilitating the construction of intricate data structures and optimizing the performance of smart contracts on the Cardano blockchain. as well as Aiken's expressive syntax and strong typing system  which contributed to writing clear and maintainable code.
+- *Further experience with Plutarch and Aiken:* We got to appreciate Plutarch’s ability to provide more efficient and precise control over data structures, facilitating the construction of intricate data structures and optimizing the performance of smart contracts on the Cardano blockchain because it oprates at a much lower level. Aiken's expressive syntax and strong typing system  also contributed to writing more clear and maintainable code.
 
 #v(10mm)
 
@@ -156,12 +163,12 @@ List of project KPIs and how the project addressed them:
 \
 *Continuous improvement:* Based on the feedback and insights from the community, we plan to continue refining and optimizing our implementations of Merkle trees, Tries, and Linked Lists in both Aiken and Plutarch.
 
-*Community engagement and collaboration:* We intend to monitor various metrics on GitHub as indicators of community interest and adoption such as tracking the number of stars, forks, pull requests and contributions in the repository. Feedbacks, discussions, and questions on the project’s GitHub repository will also be monitored to assess the level of community engagement with the project.
+*Community engagement and collaboration:* We intend to monitor various metrics on GitHub as indicators of community interest and adoption such as tracking the number of stars, forks, pull requests and contributions in the repository. Feedbacks, discussions, and questions on the project’s GitHub repository will also be monitored to assess the level of community engagement with the project. Additionally, we will explore opportunities for further collaboration with other Cardano projects, building on our successful integration with SundaeSwap, to showcase the practical applications of our advanced data structure implementations.
 
 #v(10mm)
 = Final thoughts/comments:
 \
-We are incredibly proud to add open source libraries to the Cardano community. We believe our implementations of advanced data structures in Aiken and Plutarch (and hopefully other languages/frameworks in the future) not only enhance the scalability of DApps on Cardano but also serve as a valuable resource for the developer community. We look forward to seeing how these tools are used and adapted in future Cardano projects.
+We are incredibly proud to add open source libraries to the Cardano community. We believe our implementations of advanced data structures in Aiken and Plutarch (and hopefully other languages/frameworks in the future) not only enhance the scalability of DApps on Cardano, but also serve as a valuable resource for the developer community. We look forward to seeing how these tools are used and adopted in future Cardano projects.
 
 #v(10mm)
 = Resources 
