@@ -44,8 +44,8 @@ https://github.com/Anastasia-Labs/single-asset-staking
   stroke: none,
   [*Project Number*], [1000013],
   [*Project manager*], [Jonathan Rodriguez],
-  [*Date Started*], [2023-10-08],
-  [*Date Completed*], [2024-03-31],
+  [*Date Started*], [Oct 8, 2023],
+  [*Date Completed*], [May 31, 2024],
 )
 
 // Reset text style to default
