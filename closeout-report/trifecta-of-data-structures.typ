@@ -4,8 +4,8 @@
 #let fund-link = link("https://projectcatalyst.io/funds/10/f10-osde-open-source-dev-ecosystem/anastasia-labs-the-trifecta-of-data-structures-merkle-trees-tries-and-linked-lists-for-cutting-edge-contracts")[Catalyst Proposal]
 #let git-link = link("https://github.com/Anastasia-Labs/data-structures")[Main Github Repo]
 #let taste-test-link = link("https://sundae.fi/posts/sundaeswap-presents-the-taste-test")[Taste Test]
-#let single-asset-staking-link = link("https://sundae.fi/posts/sundaeswap-presents-the-taste-test")[Single Asset Staking]
-https://github.com/Anastasia-Labs/single-asset-staking
+#let single-asset-staking-link = link("https://github.com/Anastasia-Labs/single-asset-staking
+")[Single Asset Staking]
 #set page(
   background: image-background,
   paper :"a4",
