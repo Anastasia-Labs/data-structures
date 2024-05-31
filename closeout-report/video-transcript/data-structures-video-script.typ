@@ -109,6 +109,11 @@
 #align(center)[
   #set text(size: 16pt)
   #strong["The Trifecta of Data Structures: Merkle Trees, Tries, and Linked Lists for Cutting-Edge Contracts"]]
+
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 1")
+#set text(size: 11pt)  // Reset text size to 10pt
+
 #v(10pt)
 = Introduction
 #v(10pt)
@@ -119,6 +124,9 @@ I'm excited to present the closeout report for our project, "The Trifecta of Dat
 
 In this presentation, I'll cover why we embarked on this project, how we executed it, and the outcomes we achieved. Let's dive in!
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 2")
+#set text(size: 11pt)  // 
 \ // Which challenge did you enter and why?
 == Project Context and Importance
 
@@ -143,6 +151,9 @@ These structures are essential for enhancing the scalability and efficiency of D
 - To provide detailed, easy-to-follow documentation to help developers implement these structures.
 #v(10pt)
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 3")
+#set text(size: 11pt)  // 
 \ // Please explain any particular technical solutions you proposed and the amount of funding you received.
 = Execution and Milestones
 
@@ -157,10 +168,19 @@ We chose to go with Aiken and Plutarch as opposed to the other Cardano developme
 
 - Plutarch is known for its ability to manipulate outcomes at a lower level (close to UPLC), which enables more control over the execution of smart contracts, leading to more efficient and compact scripts.
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 4")
+#set text(size: 11pt)  // 
 - *Merkle Tree:* The Merkle Tree is valuable in proving the presence of arbitrary data within the tree structure. By carrying only the root hash in the script, an efficient and space-saving proof can be generated, ensuring data integrity and validity.
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 5")
+#set text(size: 11pt)  // 
 - *Trie (Stick Breaking Set):* Developed with comprehensive functionality for Aiken and Plutarch, the Trie is particularly useful in facilitating mutable data storage in scripts by leveraging the sharing of common prefixes. This approach optimizes storage efficiency and enables more extensive data manipulation within the constrained on-chain environment.
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 6")
+#set text(size: 11pt)  // 
 - *Linked List:* Created to enhance scalability and throughput in smart contracts, the Linked List leverages the EUTXO model to significantly enhance scalability and throughput. By linking multiple UTXOs together through a series of minting policies and validators, it improves the user experience interacting with smart contracts concurrently.
 
 With this outlined approach of the execution of these technical solutions, we received a total funding of ₳238,374 from Catalyst Fund 10. To date, we have received ₳105,000, with ₳133,374 remaining to be distributed upon the completion of all milestones.
@@ -173,6 +193,9 @@ Each design pattern was tagged with a release version, enabling the community to
 \ We conducted rigorous testing for all three data structures to ensure their robustness and efficiency. Each data structure was subjected to code reviews and thorough unit tests, with results integrated into a CI/CD pipeline.
 We ensured that all design patterns passed the unit testing phase successfully.
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 7")
+#set text(size: 11pt)  // 
 \
 == Phase 3: Comprehensive Documentation
 
@@ -182,10 +205,16 @@ We ensured that all design patterns passed the unit testing phase successfully.
   - Aiken: https://github.com/Anastasia-Labs/aiken-merkle-tree
   - Plutarch: https://github.com/Anastasia-Labs/plutarch-merkle-tree
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 8")
+#set text(size: 11pt)  // 
 - *Trie:* Step-by-step instructions and tutorials can be found here;
   - Aiken: https://github.com/Anastasia-Labs/aiken-trie
   - Plutarch: https://github.com/Anastasia-Labs/plutarch-trie
 
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 9")
+#set text(size: 11pt)  // 
 - *Linked List:* Clear diagrams and use cases can be found at;
   - Aiken: https://github.com/Anastasia-Labs/aiken-linked-list.
   - Plutarch: https://github.com/Anastasia-Labs/plutarch-linked-list
@@ -195,6 +224,10 @@ All documentation is well-organized, well-structured, and accessible to develope
 
 #v(10mm)
 // Once your project went live, how did you progress? What learnings and challenges did you find along the way? Were you able to keep the project within the scope of your application? What milestones/KPIs did you set at the outset, and did you achieve them? Importantly, what were the fund challenges, and did you achieve them? What did you not achieve? What other major achievements were there?
+
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 10 ")
+#set text(size: 11pt)  // 
 = Achievements and Outcomes
 
 \ We are thrilled to share the remarkable outcomes of our project, which we are hopeful will significantly contribute to the Cardano ecosystem:
@@ -218,7 +251,9 @@ Aiken’s expressive syntax and strong typing system also contributed to writing
 
 \ // What next for the product/service you have developed? If appropriate, please tell us about any commercialization/exploitation plans you have now that your funded project is complete, particularly whether you are seeking further funding and what the funding would be used for.
 
-
+#set text(size: 20pt) // Reset text size to 10pt
+#strong("Slide 11")
+#set text(size: 11pt)  // 
 // Aiken property based testing:... https://github.com/aiken-lang/fuzz
 = Future Prospects and Community Impact
 
